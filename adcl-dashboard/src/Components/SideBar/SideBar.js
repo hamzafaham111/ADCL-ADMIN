@@ -112,20 +112,13 @@ const SideBar = () => {
                                 </ul>
                                 <ul className="nav nav-treeview">
                                     <li className="nav-item">
-                                        <Link to="#" className="nav-link">
+                                        <Link to="add-new-team" className="nav-link">
                                             <i className="far fa-circle nav-icon" />
                                             <p>Add Teams</p>
                                         </Link>
                                     </li>
                                 </ul>
-                                {/* <ul className="nav nav-treeview">
-                                    <li className="nav-item">
-                                        <Link to="#" className="nav-link">
-                                            <i className="far fa-circle nav-icon" />
-                                            <p>Add Fixtures</p>
-                                        </Link>
-                                    </li>
-                                </ul> */}
+
                             </li>
                             <li className="nav-item">
                                 <Link to="#" className="nav-link">
@@ -163,7 +156,7 @@ const SideBar = () => {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link to="/dashboard/scorecard" className="nav-link">
+                                <Link to="#" className="nav-link">
                                     <i className="nav-icon far" ><ScoreIcon /></i>
                                     <p>
                                         Scorecard
@@ -172,18 +165,18 @@ const SideBar = () => {
                                 </Link>
                                 <ul className="nav nav-treeview">
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link">
+                                        <Link to="add-team-players" className="nav-link">
                                             <i className="far fa-circle nav-icon" />
                                             <p>Add Team Players</p>
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                                 <ul className="nav nav-treeview">
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link">
+                                        <Link to="/dashboard/scorecard" className="nav-link">
                                             <i className="far fa-circle nav-icon" />
                                             <p>Add Scorecard</p>
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                                 <ul className="nav nav-treeview">

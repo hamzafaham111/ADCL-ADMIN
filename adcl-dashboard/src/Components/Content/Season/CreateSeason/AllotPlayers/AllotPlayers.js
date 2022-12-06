@@ -23,11 +23,13 @@ const AllotPlayers = (Props) => {
             seasonID: e.target.value
         }
         await axios.post(`${process.env.REACT_APP_DOMAIN}/get-season-players`, data).then((res) => {
+            console.log(res.data.data.categories);
             setCategories(res.data.data.categories);
         })
     }
     const handlePlayers = async (e) => {
         setSelectedCategories(e.target.value)
+        console.log(e.target.value);
         await axios.get(`${process.env.REACT_APP_DOMAIN}/categorie-players`, {
             headers: {
                 seasonID: seasonID,
@@ -35,7 +37,8 @@ const AllotPlayers = (Props) => {
             }
         }).then((res) => {
             setCategoryPlayers(res.data.players);
-            setSeasonTeams(res.data.teams)
+            setSeasonTeams(res.data.teams);
+            
         })
     }
     const handleSummery = (e) => {

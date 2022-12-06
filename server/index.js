@@ -17,6 +17,7 @@ const PlayerRout = require('./Router/PlayerAPI')
 const TournamentRout = require('./Router/TournamentAPI')
 const SeasonsRout = require('./Router/SeasonsAPI')
 const HomeRout = require('./Router/HomeAPI')
+const ScoreCardRout = require('./Router/ScoreCardAPIs')
 //Routes used
 
 app.use('/', LoginRout)
@@ -24,6 +25,8 @@ app.use('/', PlayerRout)
 app.use('/', TournamentRout)
 app.use('/', SeasonsRout)
 app.use('/', HomeRout)
+app.use('/', ScoreCardRout)
+
 
 
 dotenv.config('./env');

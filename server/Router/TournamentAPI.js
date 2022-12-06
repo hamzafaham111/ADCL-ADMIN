@@ -66,7 +66,6 @@ router.post('/delete-team-from-tournament', async (req, res) => {
     })
 
     const data = await Tournaments.findOne({ _id: tournamentID });
-    console.log(data);
     res.status(200).json({ teams: data.teams })
 })
 router.post('/delete-fixture-from-tournament', async (req, res) => {
@@ -78,7 +77,6 @@ router.post('/delete-fixture-from-tournament', async (req, res) => {
     })
 
     const data = await Tournaments.findOne({ _id: tournamentID });
-    console.log(data);
     res.status(200).json({ teams: data.teams })
 })
 router.post('/add-fixture', async (req, res) => {
@@ -98,7 +96,6 @@ router.post('/add-fixture', async (req, res) => {
 
 router.get('/display-tournaments', async (req, res) => {
     const data = await Tournaments.find();
-    console.log(data);
     res.status(200).json({ data })
 })
 router.post('/tournament-details-display', async (req, res) => {

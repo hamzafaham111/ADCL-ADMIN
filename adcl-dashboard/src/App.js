@@ -15,6 +15,8 @@ import Seasons from './Components/Content/Season/Seasons';
 import NewSeason from './Components/Content/Season/CreateSeason/NewSeason';
 import SeasonDetails from './Components/Content/Season/SeasonDetails/SeasonDetails';
 import AllotPlayers from './Components/Content/Season/CreateSeason/AllotPlayers/AllotPlayers';
+import AddTeam from './Components/Content/Teams/AddTeam/AddTeam';
+import AddTeamPlayers from './Components/Content/Scorecard/AddTeamPlayers/AddTeamPlayers';
 function App() {
 
   return (
@@ -31,10 +33,12 @@ function App() {
             <Route path='add-new-tournment' element={<NewTournament link="/dashboard/tournaments" in="Tournaments" t="Add New Tournament" />} />
             <Route path='tournaments/tournament-details/:tournamentID' element={<TournamentDetails link="/dashboard/tournaments" in="Tournaments" t="Tournament Details" />} />
             <Route path='scorecard' element={<Scorecard t="Scorecard" />} />
+            <Route path='add-team-players' element={<AddTeamPlayers t="Add Team Players" />} />
             <Route path='seasons' element={<Seasons t="Seasons" />} />
             <Route path='seasons/create-new-season' element={<NewSeason t="Create New Season" in="Seasons" link="/dashboard/seasons" />} />
             <Route path='allot-players-to-teams' element={<AllotPlayers t="Allot Players" />} />
             <Route path='seasons/season-details/:seasonID' element={<SeasonDetails t="Season Details" link="/dashboard/seasons" in="Seasons" />} />
+            <Route path='add-new-team' element={<AddTeam t="Add New Team" />} />
           </Route>
         </Routes>
       }
